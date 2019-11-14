@@ -4,11 +4,27 @@
 #print "Do you belive in aliens"
 #if yes then proceed to next page if no then exit page
 #print "Welcome to the Mother Ship"
+S = raw_input("Do you belive in aliens type Yes or No: ")
+print S
+#Introduces the person to the program
+if S is == "No":
+return "Ok have a nice day"
+# If they replay no give them this statement
+if S is == "Yes":
+return "Welcome to the Mother Ship"
+#if they reply yes then give them this staetment and have them procaed
+
+W = raw_input("Which State do you live in : ")
+print W
+# Whichever state they live in they say I can read on my end and give them the correct numbers for said state.
 import csv
 #above I imported the csv of the data for the amount of alien sisghting per 100,000 in each state.
 with csv open('Sheet1.csv') as csvfile:
-    readCSV = csv.reader(csvfile,)
+    #
+    readCSV = csv.reader(csvfile)
     for row in reader:
-        print (row['State'], row['Sightings']
+        print (row['State'], row['Sightings'], row['Rank'])
 
+Q = raw_input ("With this new information you a great power and a great responsiblity to live your life accordingly .... in the Twilight Zone")
+print Q
 # I'm not to sure if I would do  a dictionary to easily iterate through the code to return the amount of people that have had an alien incounter.

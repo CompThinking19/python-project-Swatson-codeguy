@@ -7,6 +7,9 @@
 S = raw_input("Do you belive in aliens type Yes or No: ")
 print S
 #Introduces the person to the program
+if type (S)!= str:
+    raise TypeError("Only answer yes or no")
+#Raises type error if they type in something else.
 if S is == "No":
 return "Ok have a nice day"
 # If they replay no give them this statement
@@ -25,6 +28,6 @@ with csv open('Sheet1.csv') as csvfile:
     for row in reader:
         print (row['State'], row['Sightings'], row['Rank'])
 
-Q = raw_input ("With this new information you a great power and a great responsiblity to live your life accordingly .... in the Twilight Zone")
+Q = raw_input ("With this new information you a great power and a great responsiblity to live your life accordingly .... in a galxay near you.")
 print Q
 # I'm not to sure if I would do  a dictionary to easily iterate through the code to return the amount of people that have had an alien incounter.

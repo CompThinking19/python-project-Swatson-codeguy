@@ -6,22 +6,22 @@
 #print "Welcome to the Mother Ship"
 S = raw_input("Do you belive in aliens type Yes or No: ")
 print S
-#Introduces the person to the program
-if type (S)!= str:
+# Introduces the person to the program asking them if they belive in aliens.
+if type (S)!= "Yes"or "No":
     raise TypeError("Only answer yes or no")
-#Raises type error if they type in something else.
-if S is == "No":
-return "Ok have a nice day"
-# If they replay no give them this statement
-if S is == "Yes":
-return "Welcome to the Mother Ship"
-#if they reply yes then give them this staetment and have them procaed
+# Raises type error if they type in something else.
+if S == "No":
+print "Ok have a nice day"
+# If they replay no give them this statement.
+if S == "Yes":
+print "Welcome to the Mother Ship"
+# If they reply yes then give them this staetment and have them procead.
 
 W = raw_input("Which State do you live in : ")
 print W
 # Whichever state they live in they say I can read on my end and give them the correct numbers for said state.
 import csv
-#above I imported the csv of the data for the amount of alien sisghting per 100,000 in each state.
+# Above I imported the csv of the data for the amount of alien sighting per 100,000 in each state.
 with csv open('Sheet1.csv') as csvfile:
     #
     readCSV = csv.reader(csvfile)

@@ -9,27 +9,27 @@ if type (Belive)!= "Yes"or "No":
     raise TypeError("Only answer yes or no")
 # Raises type error if they type in something other than yes or no.
 if Belive == "No":
-print "Ok have a nice day"
+    print"Ok have a nice day"
 # If they replay no give them this statement.
 if Belive == "Yes":
-print("\033[1;32;40m Bright Green  \n")
-print "Welcome to the Mother Ship"
+    print("\033[1;32;40m Bright Green  \n")
+    print "Welcome to the Mother Ship"
 # If they reply yes then give them this staetment and have them procead.
-
 State_Livedin = raw_input("Which State do you live in : ")
 print State_Livedin
 # Whichever state they live in they say I can read on my end and give them the correct numbers for said state.
 import csv
 # Above I imported the csv of the data for the amount of alien sighting per 100,000 in each state.
-with csv open('Sheet1.csv') as csvfile:
+with open('Sheet1.csv') as csvfile:
     #This opens the csv of the alien information that I got from the website.
     readCSV = csv.reader(csvfile)
     #This reads the csv into atom and gives me acess to take things from the csv.
     for row in reader:
-        if row in reader == State_Livedin:
+            if row in reader == State_Livedin:
             # This if statement is here to read the state that the user choose and will match and pull it from the csv.
-        print (row['State'], row['Sightings'], row['Rank'])
+                print (row['State'], row['Sightings'], row['Rank'])
 # This will print the information about the state that the user needs.
 Power = raw_input ("With this new information you a great power and a great responsiblity to live your life accordingly .... in a galxay near you.")
 print Power
+
 # This will print the last question to the screen as an conclusion to my program.

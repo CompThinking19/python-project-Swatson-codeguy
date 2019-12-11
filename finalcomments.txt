@@ -1,0 +1,11 @@
+Comments
+Extensive comments throughout which orient me inside your code. There's a sense of both what and why in your comments.
+
+Code Quality
+The aim here is fairly straightforward and is accomplished with a minimum of fuss. There's really not any opportunities for encapsulation. I'm not sure that a TypeError is the correct thing to raise for an incorrect answer, and the opportunity to recover from bad input is important in these kinds of programs.
+
+Ambition
+As I've said a few different times during this process, this feels like it might need a bit more substance. You're by no means obligated to address something ultra serious, but the data you include can be found on the web. I wonder what you could do with code that you might not be able to do without it?
+
+Aesthetics
+I like that you changed the terminal color to green. That's such a minor note, but it was a small thing that contributed to the overall experience. As I said in my other comments, there's more that you could do with this kind of data—and computing power—but what you have here is fair start.
